@@ -1,0 +1,28 @@
+﻿@model Truffle.Models.LoginModel
+@{
+    ViewBag.Title = "Login";
+    var error = TempData["error"];
+}
+
+<h2>Login</h2>
+
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+@using (Html.BeginForm("Login", "Account"))
+{
+    @Html.ValidationSummary(true, "Login was unsusccessful. Please correct the errors and try again.")
+    <p>@error</p>
+    <fieldset>
+        <legend>Log in Form</legend>
+        <ol>
+            <li>
+                @Html.LabelFor(m => m.ShopName)
+                @Html.TextBoxFor(m => m.ShopName)
+                @Html.ValidationMessageFor(m => m.ShopName)
+                @Html.AntiForgeryToken()
+            </li>
+        </ol>
+        <input type="submit" value="Log in" />
+    </fieldset>
+}

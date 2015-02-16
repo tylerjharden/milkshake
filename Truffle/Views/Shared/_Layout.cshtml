@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+
+    <!-- Shopify Embedded App SDK -->
+    <script src="https://cdn.shopify.com/s/assets/external/app.js"></script>
+    <script type="text/javascript">
+    ShopifyApp.init({
+        apiKey: 'b7ad4c7dc675c7f7a0f1dd3908b8fd55',
+        shopOrigin: 'https://wishlu-sandbox.myshopify.com',
+        debug: true
+    });
+    </script>
+
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+</head>
+<body>
+    <section id="login">
+        @Html.Partial("_LoginPartial")
+    </section>
+
+    @RenderBody()
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,32 @@
+﻿@using ShopifyAPIAdapterLibrary;
+@{    
+    ViewBag.Title = "Give";
+    Layout = "~/Views/Shared/_CustomerLayout.cshtml";
+}
+
+@{
+    
+}
+
+<h2>Give</h2>
+<p>You have chosen to give an item via wishlu!</p>
+
+<img src="@Model.product.images[0].src" style="width: 150px; height: 150px;" />
+<h3>@Model.product.title</h3>
+<h5>$@Model.product.variants[0].price</h5>
+
+
+<h2>Select the friend this is for:</h2>
+<div style="position:relative; display: inline-block; width: 100%; float: left;">
+    @foreach (Truffle.Common.WishLuUser u in Truffle.Common.Graph.GetUsers())
+    { 
+        <a href="/apps/wishlu/buy?id=@(u.Id)&pid=@(Model.product.id)" style="display:inline-block; float: left; text-align: center; border: 2px solid lightblue; border-radius: 15px; width: 100px; height: 75px; margin: 2px; padding: 2px;">
+            <h5 style="margin-top: 1px; margin-bottom: 2px;">@(u.FirstName) @(u.LastName)</h5>
+            <img src="@u.ImageFileName" style="border-radius: 15px; display: inline-block; width: 50px; height: 50px;"/>
+        </a>
+    }
+</div>
+
+@Model
+
+@*@api.Get("/admin/products/#" + Model.product.id)*@

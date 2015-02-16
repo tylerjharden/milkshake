@@ -1,0 +1,68 @@
+﻿@using ShopifyAPIAdapterLibrary;
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@if (Session["authState"] == null)
+{
+    <script type='text/javascript'>
+        window.top.location.href = '/authorize';
+    </script>    
+}
+
+<script type="text/javascript">
+    ShopifyApp.ready(function () {
+        ShopifyApp.Bar.initialize({
+            icon: 'http://dev.wishlu.com/Images/centerLogo.png',
+            title: 'settings',
+            buttons: {
+                primary: {
+                    label: 'Save',
+                    message: 'save',                   
+                    callback: function () {
+                        ShopifyApp.Bar.loadingOn();
+                        //doSomeCustomAction();
+                        ShopifyApp.Modal.alert("TODO: Save settings/preferences", function (result) {
+                            ShopifyApp.Bar.loadingOff();
+                        });
+                    }
+                }
+            }
+        });
+    });
+</script>
+               
+<h2>Settings</h2>
+
+@{
+    dynamic data = "null";
+    
+    if (Session["authState"] != null)
+    { 
+        // pass the supplied JSON Data Translator
+        var api = new ShopifyAPIClient((ShopifyAuthorizationState)Session["authState"], new JsonDataTranslator());
+
+        // The JSON Data Translator will automatically decode the JSON for you
+        data = api.Get("/admin/shop.json");
+    }
+    else
+    {
+        data = "authState was null";
+    }
+}
+
+@* the dynamic object will have all the fields just like in the API Docs *@
+@if (Session["authState"] != null)
+{
+    var shop = data.shop;
+    {
+        <h1>@shop.name</h1>
+        <h2>owned by: @shop.shop_owner</h2>
+    }
+}
+else
+{
+ <div>@data</div>   
+}
+    
