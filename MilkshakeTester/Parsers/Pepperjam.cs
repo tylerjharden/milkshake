@@ -22,169 +22,415 @@ namespace MilkshakeTester.Parsers
             p.Source = RawProduct.ProductDataSource.Pepperjam;
 
             try { p.ProgramId = reader["program_id"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.Store = reader["program_name"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.Currency = reader["currency"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.AgeRange = reader["age_range"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.Artist = reader["artist"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.AspectRatio = reader["aspect_ratio"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.Author = reader["author"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.BatteryLife = reader["battery_life"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.Binding = reader["binding"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.Url = reader["buy_url"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.BuyUrl = reader["buy_url"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.Color = reader["color"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.ColorOutput = reader["color_output"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.Condition = reader["condition"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.LongDescription = reader["description_long"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.Director = reader["director"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.DisplayType = reader["display_type"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.Edition = reader["edition"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.ExpirationDate = reader["expiration_date"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.FeaturesAndSpecifications = reader["features"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.FocusType = reader["focus_type"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.Format = reader["format"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.Functions = reader["functions"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.Genre = reader["genre"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.HeelHeight = reader["heel_height"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.Height = reader["height"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.ImageThumbUrl = reader["image_thumb_url"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.Image = reader["image_url"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.Installation = reader["installation"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.ISBN = reader["isbn"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.Length = reader["length"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.LoadType = reader["load_type"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.Location = reader["location"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.MadeIn = reader["made_in"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.Manufacturer = reader["manufacturer"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.Material = reader["material"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.Megapixels = reader["megapixels"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.MemoryType = reader["memory_type"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.MemoryCapacity = reader["memory_capacity"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.MemoryCardSlot = reader["memory_card_slot"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.ModelNumber = reader["model_number"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.MPN = reader["mpn"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.Name = reader["name"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.Occasion = reader["occasion"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.OperatingSystem = reader["operating_system"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.OpticalDrive = reader["optical_drive"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.RetailPrice = reader["price_retail"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.Pages = reader["pages"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.PaymentAccepted = reader["payment_accepted"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.PaymentNotes = reader["payment_notes"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.Platform = reader["platform"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.SalePrice = reader["price_sale"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.Processor = reader["processor"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.Publisher = reader["publisher"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.QuantityInStock = reader["quantity_in_stock"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.Rating = reader["rating"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.RecommendedUsage = reader["recommended_usage"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.Resolution = reader["resolution"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.ShoeSize = reader["shoe_size"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.ScreenSize = reader["screen_size"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.ShippingMethod = reader["shipping_method"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.ShippingPrice = reader["price_shipping"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.ShoeWidth = reader["shoe_width"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.Size = reader["size"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.SKU = reader["sku"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.Staring = reader["staring"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.Style = reader["style"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.Tracks = reader["tracks"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.UPC = reader["upc"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.Weight = reader["weight"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.Width = reader["width"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.WirelessInterface = reader["wireless_interface"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.Year = reader["year"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.Zoom = reader["zoom"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.NetworkCategory = reader["category_network"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.ProgramCategory = reader["category_program"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.ShortDescription = reader["description_short"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.Discontinued = reader["discontinued"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.InStock = reader["in_stock"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.TechSpecsUrl = reader["tech_specs_url"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.Keywords = reader["keywords"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
             try { p.Price = reader["price"]; }
-            catch { }
+            catch (Exception e)  
+            {  
+               Console.WriteLine(Exception e);  
+            }  
 
             return p;
         }
